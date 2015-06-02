@@ -54,18 +54,11 @@
 				<li><a target="_blank" href="https://validator.w3.org/">W3C</a></li>
 				<li><a target="_blank" href="https://www.github.com">GitHub</a></li>
 				<li><a target="_blank" href="http://librosweb.es/libro/css/">CSS Básico</a></li>
-				<li><a target="_blank" href="http://librosweb.es/libro/css_avanzado/">Avanzado</a></li>
+				<li><a target="_blank" href="http://librosweb.es/libro/css_avanzado/">CSS Avanzado</a></li>
 			</ul>
 	</aside>
 
 	<hr>
-	
-	<footer id="pie">
-			<h2>@Copyright | Contacto | Mapa Web</h2>
-			<a target="_blank" href="http://www.twitter.com"><img src="img/twitter.png"></img></a>
-			<a target="_blank" href="http://www.facebook.com"><img src="img/facebook.png"></img></a>
-			<a target="_blank" href="http://www.instagram.com"><img src="img/instagram.png"></img></a>
-	</footer>
 	
 	<br> <br> <br> <br> <br> <br> <br> <br>
 	<br> <br> <br> <br> <br> <br> <br>

@@ -58,6 +58,16 @@
 				<li><a href="ejemplos/selectores/css3.jsp">CSS3</a></li>
 			</ul>
 		</li>
-
+		<li>
+			<h3>Posicionamiento</h3>
+			<ul>
+				<li><a href="ejemplos/posicionamiento/absoluto.jsp">Absoluto</a></li>
+				<li><a href="ejemplos/posicionamiento/fijo.jsp">Fijo</a></li>
+				<li><a href="ejemplos/posicionamiento/inherit.jsp">Inherit</a></li>
+				<li><a href="ejemplos/posicionamiento/normal.jsp">Normal</a></li>
+				<li><a href="ejemplos/posicionamiento/relativo.jsp">Relativo</a></li>
+				<li><a href="ejemplos/posicionamiento/float.jsp">Elementos Flotantes</a></li>
+			</ul>
+		</li>
 	</ul>
 </nav>
