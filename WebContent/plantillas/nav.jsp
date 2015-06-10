@@ -55,7 +55,7 @@
 				</li>
 				<li>
 					<h4>Posicionamiento</h4>
-						<ul>
+					<ul>
 						<li><a href="ejemplos/posicionamiento/absoluto.jsp">Absoluto</a></li>
 						<li><a href="ejemplos/posicionamiento/fijo.jsp">Fijo</a></li>
 						<li><a href="ejemplos/posicionamiento/inherit.jsp">Inherit</a></li>

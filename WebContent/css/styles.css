@@ -361,6 +361,7 @@ nav{
 
 .menu li ul{
 	list-style:none; /*Quita los puntos de Lista a su izda*/
+	margin-left:0px;
 }
 
 .menu li h3{
@@ -377,7 +378,7 @@ nav{
 	background-color:#000; /*  =&000000 -> Negro*/
 	color:#FFF; /* =&ffffff -> Blanco*/
 	text-decoration:none;
-	padding:10px 5px;
+	padding:10px 15px;
 	margin:0px;
 }
 
