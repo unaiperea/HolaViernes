@@ -29,13 +29,6 @@
 				<li><a href="ejemplos/formularios/progress.jsp">Progress</a></li>
 			</ul>
 		<li>
-			<h3>Plugins</h3>
-			<ul>
-				<li><a href="ejemplos/plugins/datatable.jsp">DataTables</a></li>
-
-			</ul>
-		</li>
-		<li>
 			<h3>Nuevos elementos HTML5</h3>
 			<ul>
 				<li><a href="ejemplos/html5/mark.jsp">Mark</a></li>
@@ -51,7 +44,7 @@
 			<h3>CSS3</h3>
 			<ul>
 				<li>
-					<h3>Selectores</h3>
+					<h4>Selectores</h4>
 					<ul>
 						<li><a href="ejemplos/selectores/hijos.jsp">Hijos</a></li>
 						<li><a href="ejemplos/selectores/adyacentes.jsp">Adyacentes</a></li>
@@ -61,7 +54,7 @@
 					</ul>
 				</li>
 				<li>
-					<h3>Posicionamiento</h3>
+					<h4>Posicionamiento</h4>
 						<ul>
 						<li><a href="ejemplos/posicionamiento/absoluto.jsp">Absoluto</a></li>
 						<li><a href="ejemplos/posicionamiento/fijo.jsp">Fijo</a></li>
@@ -72,7 +65,7 @@
 					</ul>
 				</li>
 				<li>
-					<h3>T&eacute;cnicas Avanzadas</h3>
+					<h4>T&eacute;cnicas Avanzadas</h4>
 					<ul>
 						<li><a href="ejemplos/tecnicas_avanzadas/sprite.jsp">Sprite</a></li>
 						<li><a href="ejemplos/tecnicas_avanzadas/fuente.jsp">Fuente Awesome</a></li>
@@ -86,7 +79,15 @@
 			<h3>JavaScript</h3>
 			<ul>
 				<li><a href="ejemplos/javascript/basico.jsp">B&aacute;sico</a></li>
+				<li>
+					<h4>Plugins</h4>
+					<ul>
+						<li><a href="ejemplos/plugins/datatable.jsp">DataTables</a></li>
+		
+					</ul>
+				</li>
 				<li><a href="ejemplos/javascript/calculadora.jsp">Calculadora</a></li>
+				<li><a href="ejemplos/javascript/qunit.jsp">Test</a></li>
 			</ul>
 		</li>
 		

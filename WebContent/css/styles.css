@@ -129,7 +129,7 @@ table.tabla_azul, .tabla_azul tr, .tabla_azul td {
 
 */
 
-/* NAV */
+/* HOME */
 
 #logo a{
 	float:left;
@@ -142,10 +142,6 @@ table.tabla_azul, .tabla_azul tr, .tabla_azul td {
 
 #logo h1{
 	font-weight:bold;
-}
-
-.menu li h3{
-	font-size:12px;
 }
 
 /* HOME */
@@ -368,11 +364,21 @@ nav{
 }
 
 .menu li h3{
+	font-size:13px;
+	background-color:#000; /*  =&000000 -> Negro*/
+	color:#FFF; /* =&ffffff -> Blanco*/
+	text-decoration:none;
+	padding:10px 15px;
+	margin: 0;
+}
+
+.menu li h4{
+	font-size:15px;
 	background-color:#000; /*  =&000000 -> Negro*/
 	color:#FFF; /* =&ffffff -> Blanco*/
 	text-decoration:none;
 	padding:10px 5px;
-	margin: 0;
+	margin:0px;
 }
 
 .menu li h3:hover{
@@ -397,7 +403,7 @@ nav{
 .menu li ul{
 	display:none;
 	position:absolute;
-	min-width:140px;
+	min-width:163px;
 }
 
 .menu li:hover > ul{
