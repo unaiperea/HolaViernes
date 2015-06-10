@@ -1,6 +1,6 @@
 
 <nav>
-	<ul>
+	<ul class="menu">
 		<li>
 			<h3>B&aacute;sicos</h3>
 			<ul>
@@ -15,8 +15,8 @@
 			<h3>Reales</h3>
 			<ul>
 				<li><a href="ejemplos/reales/cartelera.jsp">Cartelera</a></li>
-				<li><a href="ejemplos/reales/cartelera_detalle.jsp">Detalle
-						Cartelera</a></li>
+				<li><a href="ejemplos/reales/detalle_pelicula.jsp">Detalle
+						Pel&iacute;cula</a></li>
 			</ul>
 		</li>
 		<li>
@@ -48,26 +48,50 @@
 			</ul>
 		</li>
 		<li>
-			<h3>Selectores</h3>
+			<h3>CSS3</h3>
 			<ul>
-				<li><a href="ejemplos/selectores/atributos.jsp">Atributos</a></li>
-				<li><a href="ejemplos/selectores/hijos.jsp">Hijos</a></li>
-				<li><a href="ejemplos/selectores/adyacentes.jsp">Adyacentes</a></li>
-				<li><a href="ejemplos/selectores/pseudo-clases.jsp">Pseudo-Clases</a></li>
-				<li><a href="ejemplos/selectores/pseudo-elementos.jsp">Pseudo-Elementos</a></li>
-				<li><a href="ejemplos/selectores/css3.jsp">CSS3</a></li>
+				<li>
+					<h3>Selectores</h3>
+					<ul>
+						<li><a href="ejemplos/selectores/hijos.jsp">Hijos</a></li>
+						<li><a href="ejemplos/selectores/adyacentes.jsp">Adyacentes</a></li>
+						<li><a href="ejemplos/selectores/pseudo-clases.jsp">Pseudo-Clases</a></li>
+						<li><a href="ejemplos/selectores/pseudo-elementos.jsp">Pseudo-Elementos</a></li>
+						<li><a href="ejemplos/selectores/css3.jsp">CSS3</a></li>
+					</ul>
+				</li>
+				<li>
+					<h3>Posicionamiento</h3>
+						<ul>
+						<li><a href="ejemplos/posicionamiento/absoluto.jsp">Absoluto</a></li>
+						<li><a href="ejemplos/posicionamiento/fijo.jsp">Fijo</a></li>
+						<li><a href="ejemplos/posicionamiento/inherit.jsp">Inherit</a></li>
+						<li><a href="ejemplos/posicionamiento/normal.jsp">Normal</a></li>
+						<li><a href="ejemplos/posicionamiento/relativo.jsp">Relativo</a></li>
+						<li><a href="ejemplos/posicionamiento/float.jsp">Elementos Flotantes</a></li>
+					</ul>
+				</li>
+				<li>
+					<h3>T&eacute;cnicas Avanzadas</h3>
+					<ul>
+						<li><a href="ejemplos/tecnicas_avanzadas/sprite.jsp">Sprite</a></li>
+						<li><a href="ejemplos/tecnicas_avanzadas/fuente.jsp">Fuente Awesome</a></li>
+						<li><a href="ejemplos/tecnicas_avanzadas/icomoon.jsp">IcoMoon</a></li>
+					</ul>
+				</li>
 			</ul>
 		</li>
+		
 		<li>
-			<h3>Posicionamiento</h3>
+			<h3>JavaScript</h3>
 			<ul>
-				<li><a href="ejemplos/posicionamiento/absoluto.jsp">Absoluto</a></li>
-				<li><a href="ejemplos/posicionamiento/fijo.jsp">Fijo</a></li>
-				<li><a href="ejemplos/posicionamiento/inherit.jsp">Inherit</a></li>
-				<li><a href="ejemplos/posicionamiento/normal.jsp">Normal</a></li>
-				<li><a href="ejemplos/posicionamiento/relativo.jsp">Relativo</a></li>
-				<li><a href="ejemplos/posicionamiento/float.jsp">Elementos Flotantes</a></li>
+				<li><a href="ejemplos/javascript/basico.jsp">B&aacute;sico</a></li>
+				<li><a href="ejemplos/javascript/calculadora.jsp">Calculadora</a></li>
 			</ul>
 		</li>
+		
 	</ul>
 </nav>
+</header> <!-- Nav está incluido en header -->
+
+<div id="content"> <!--  Para que englobe las secciones intermedias y no se solapen con el header -->

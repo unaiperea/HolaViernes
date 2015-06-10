@@ -21,6 +21,12 @@
 
 <link rel="stylesheet" type="text/css" href="css/styles.css?v=1.0">
 
+<!-- Añadir css de fuente Awesome -->
+<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.3.0/css/font-awesome.css">
+
+<!-- Custom IcoMoon-->
+<link rel="stylesheet" type="text/css" href="fonts/icomoon/style.css">
+
 <!--[if lt IE 9]>
   <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
@@ -36,9 +42,16 @@
 			<p>No seas capullín y no lo deshabilites</p>
 		</noscript>
 		
-		<header id="logo">
-			<h1>Ejemplos HTML5 CSS3 y JS</h1>
-				<a href="index.jsp"> <img alt="Volver" title="Volver" id="dado"
-					src="img/home.png" />
-				</a>
-		</header>
+		<!-- Contiene todo lo que quiero que se quede en una misma línea
+			 y lo siguiente que empiece debajo en una misma línea -->
+		<div class="clearfix">
+			<header id="head">
+				<div id="logo">
+					<a href="index.jsp"> <img alt="Volver" title="Volver" id="dado"
+					   src="img/home.png" />
+					</a>
+					<h1>Ejemplos HTML5 CSS3 y JS</h1>
+
+				</div>
+			</div>
+		<!-- El </header> se cierra en nav.jsp para que esté contenido en él -->

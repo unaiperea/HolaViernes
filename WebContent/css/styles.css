@@ -51,9 +51,26 @@ ol ol, ul ul {
 h1 {
 	font-size: 50px;
 	margin-bottom: 20px;
-	color: green;
+	color: grey;
 	font-family: arial;
 	text-align: center;
+	font-width:bold;
+}
+
+h2 {
+	font-size: 23px;
+	margin-bottom: 15px;
+	color: #FFF000;
+	font-family: arial;
+	text-align: center;
+}
+
+h3 {
+	font-size: 18px;
+	margin-bottom: 10px;
+	color: #000;
+	font-family: arial;
+	text-align: left;
 }
 
 strong {
@@ -69,7 +86,7 @@ p {
 
 /* 
 	ESTILOS REUTILIZABLES
-    Regla con selector por CLASS para usar en todas las pÃ¡ginas
+    Regla con selector por CLASS para usar en todas las páginas
 */
 table.tabla_azul, .tabla_azul tr, .tabla_azul td {
 	border: 1px solid grey;
@@ -95,7 +112,7 @@ table.tabla_azul, .tabla_azul tr, .tabla_azul td {
 .numero {
 	color: #0099FF;
 	font-family: arial;
-	font-size: 150px;
+	font-size: 20px;
 }
 
 .hightlight {
@@ -106,13 +123,6 @@ table.tabla_azul, .tabla_azul tr, .tabla_azul td {
 	color: green;
 }
 
-.cartel {
-	float: left;
-	margin-right: 30px;
-	width: 250px;
-	height: auto;
-}
-
 /*
 	PAGINAS
 	Tendremos una seccion por cada pagina de nuestra Web
@@ -120,17 +130,37 @@ table.tabla_azul, .tabla_azul tr, .tabla_azul td {
 */
 
 /* NAV */
+
+#logo a{
+	float:left;
+}
+
 #logo img {
 	width: 40px;
 	height: 40px;
 }
 
+#logo h1{
+	font-weight:bold;
+}
+
+.menu li h3{
+	font-size:12px;
+}
+
 /* HOME */
 #home {
-	
+	padding-top:50px;
 }
 
 /* CARTELERA */
+.cartel {
+	float: left;
+	margin-right: 30px;
+	width: 250px;
+	height: auto;
+}
+
 #cartelera li h3 {
 	color: #0076EC;
 	font-family: "dinengschriftstd", "Another Font", generic;
@@ -138,8 +168,43 @@ table.tabla_azul, .tabla_azul tr, .tabla_azul td {
 	font-weight: bold;
 }
 
-#cartelera li h3:hover {
-	color: orange;
+#tit_peli li:nth-child(3n+0){/*Cada 3 que salte una línea*/
+	margin-right:0;
+}
+
+#cartelera li{
+	background-color:green;
+	float: left;
+	/*padding: 24px;*/
+	width: 28%;
+	margin-right:2%;
+	list-style:none; /*Quita los puntos de Lista a su izda*/
+}
+
+#titulin{
+	background: rgba(0,0,0,0.6); /*Con transparencia*/
+	bottom:0;
+	width:90%;
+	padding: 3% 5%;
+	text-align: center;
+	min-height:40px;
+	display:none; /*Ocultamos el título*/
+	position:absolute;
+}
+
+#cartelera #titulin h3{
+	color:#0099FF;
+	text-align: center;
+}
+
+.tit_peli:hover #titulin{
+	display:block; /*Hacemos visible el título*/
+}
+
+.tit_peli{
+	position:relative;
+	width:200px;
+	margin-bottom:50px;
 }
 
 /* CARTELERA_DETALLE */
@@ -154,6 +219,33 @@ table.tabla_azul, .tabla_azul tr, .tabla_azul td {
 	height: 200px;
 }
 
+#btn_ganador {
+  background: #3498db;
+  background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+  background-image: -moz-linear-gradient(top, #3498db, #2980b9);
+  background-image: -ms-linear-gradient(top, #3498db, #2980b9);
+  background-image: -o-linear-gradient(top, #3498db, #2980b9);
+  background-image: linear-gradient(to bottom, #3498db, #2980b9);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+#btn_ganador:hover {
+	background: #ff6600;
+	background-image: -webkit-linear-gradient(top, #ff6600, #ff6600);
+	background-image: -moz-linear-gradient(top, #ff6600, #ff6600);
+	background-image: -ms-linear-gradient(top, #ff6600, #ff6600);
+	background-image: -o-linear-gradient(top, #ff6600, #ff6600);
+	background-image: linear-gradient(to bottom, #ff6600, #ff6600);
+	text-decoration: none;
+}
+	
 #encabezado {
 	border: 2px dotted green;
 }
@@ -221,17 +313,116 @@ form input[type="text"]:focus:required:invalid{
 	height: 30px;
 }
 
+/* Sección */
 #seccion{
-	background-color: grey;
 	float: left;
 	margin-right: 30px;
-	width: 500px;
+	width: 700px;
 	height: auto;
 }
 
+#seccion h1{
+	color:#777;
+	font-size: 35px;
+}
+
+#seccion img{
+	margin-bottom:50px;
+}
+
+/* Lateral o aside */
+#lateral{
+	margin-left: 10px;
+}
+
+#lateral ul{
+	padding:20px;
+}
+
+
+#lateral a:hover:after {
+	content: " <=--" attr(href) "--=> ";
+}
+
+/**** MENÚ ****/
+
+nav *{
+	padding:0px;
+	margin:0px;
+
+}
+
+nav{
+	width:750px;
+	margin:auto;
+	font-family:Arial, Helvetica, sans-serif;
+	float:left;
+}
+
+.menu{
+	list-style:none; /*Quita los puntos de Lista a su izda*/
+}
+
+.menu li ul{
+	list-style:none; /*Quita los puntos de Lista a su izda*/
+}
+
+.menu li h3{
+	background-color:#000; /*  =&000000 -> Negro*/
+	color:#FFF; /* =&ffffff -> Blanco*/
+	text-decoration:none;
+	padding:10px 5px;
+	margin: 0;
+}
+
+.menu li h3:hover{
+	background-color:#434343;
+}
+.menu li a{
+	background-color:#000; /*  =&000000 -> Negro*/
+	color:#FFF; /* =&ffffff -> Blanco*/
+	text-decoration:none;
+	padding:10px 15px;
+	display:block; /*Indica al elemento que empiece en un nueva línea y la ocupe toda*/
+}
+
+.menu li a:hover{ /*Al pasar sobre el menú (como un evento onMouse)*/
+	background-color:#434343;
+}
+
+.menu > li{
+	float:left;
+}
+
+.menu li ul{
+	display:none;
+	position:absolute;
+	min-width:140px;
+}
+
+.menu li:hover > ul{
+	display:block;
+}
+
+.menu li ul li{
+	position:relative;
+}
+
+.menu li ul li ul{
+	right:-163px;
+	top:0px;
+}
+
+/* CONTENEDOR */
+#content{
+	padding-top:120px;
+}
+
+/* PIE o FOOTER.JSP */
 #pie{
 	margin-top:30px;
 	text-align: center;
+	/*clear: left; /*No Hace falta ya que clearfix lo contiene. Pasaría el contenido de la sección footer a la primera línea vacía debajo de lo que hubiera y que flote a la izda*/
 }
 
 /*Figure*/
@@ -259,4 +450,53 @@ form input[type="text"]:focus:required:invalid{
 /*hgroup*/
 #seccion_hgroup{
 	text-align: center;
+}
+
+
+/* CLEARFIX */
+.clearfix:before, .clearfix:after { content: ""; display: table; }
+.clearfix:after { clear: both; }
+.clearfix { *zoom: 1; }
+
+
+/* HEAD*/
+
+/*
+#head{
+	position:fixed;
+	background-color:#FFF;
+	width:900px;
+	paddig-top:10px;
+}
+
+#head #logo, #head h1{ /*He flotado el logo y el h1 a la dcha*/
+/*
+	float:right;
+}
+*/
+
+/************
+*CALCULADORA*
+************/
+
+#tabla_numeros,#tabla_operadores{
+	border:1px solid #000;
+	text-align:center;
+	font-family:arial;
+	font-size:20px;
+	color:grey;
+	margin-right:10px;
+	float:left;
+}
+
+#tabla_operadores{
+	margin-top:25px;
+}
+
+#tabla_numeros td, #tabla_operadores td{
+	padding:2px;
+}
+
+#tabla_numeros #resultado{
+	text-align:right;
 }

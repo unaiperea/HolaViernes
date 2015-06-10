@@ -43,9 +43,9 @@
 	
 	<footer>
 		Cap&iacute;tulo 9; p&aacute;gina 207
-		<a target=_blank href="http://librosweb.es/libro/css_avanzado/capitulo_1/limpiar_floats.html">CSS Avanzado Limpiar Foats</a>
-		<a target=_blank href="http://es.learnlayout.com/clearfix.html">Solución 1 clearfix</a>
-		<a target=_blank href="http://jps.com.ve/flotando-elementos-en-css-y-la-magia-de-clearfix/">Solución 2 clearfix</a>
+		<p><a target=_blank href="http://librosweb.es/libro/css_avanzado/capitulo_1/limpiar_floats.html">CSS Avanzado Limpiar Foats</a></p>
+		<p><a target=_blank href="http://es.learnlayout.com/clearfix.html">Soluci&oacute;n 1 clearfix</a></p>
+		<p><a target=_blank href="http://jps.com.ve/flotando-elementos-en-css-y-la-magia-de-clearfix/">Soluci&oacute;n 2 clearfix</a></p>
 	</footer>
 	
 	</article>

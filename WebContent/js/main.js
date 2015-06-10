@@ -21,7 +21,7 @@ var afortunados = [
 					"Ander",
 					"Javi", 
 					"Jon",
-					"Raúl", 
+					"Raï¿½l", 
 					"Jaione", 
 					"David", 
 					"Lara", 
@@ -44,8 +44,8 @@ function init(){
 	/*
 	//Set o guardar valor
 	localStorage["11"]="pepe";
-	localStorage.setItem("12","pepe"); //Auque se cierre el navegador y se vuelva a iniciar se mantendrán
-	sessionStorage.setItem("s1","se pierde si cerramos el navegador")//Al ser de SESIÓN se pierde si cerramos el Navegador
+	localStorage.setItem("12","pepe"); //Auque se cierre el navegador y se vuelva a iniciar se mantendrï¿½n
+	sessionStorage.setItem("s1","se pierde si cerramos el navegador")//Al ser de SESIï¿½N se pierde si cerramos el Navegador
 	
 	//Recuperar valor por su key
 	console.debug(localStorage["11"]);
@@ -92,7 +92,7 @@ function obtener_ganador(){
 	
 	lb_afortunado.innerHTML = num_aleatorio + ' - ' + afortunados[num_aleatorio];
 	
-	//Declaramos variable para recoger todas las celdas de la página
+	//Declaramos variable para recoger todas las celdas de la pï¿½gina
 	var celdas = document.getElementsByTagName('td') //Coge todos los elementos por etiqueta
 	//Recorremos todas las celdas 
 	for(i=0;i<celdas.length;i++){
@@ -102,16 +102,16 @@ function obtener_ganador(){
 	
 	celdas[num_aleatorio].style.backgroundColor='red';
 	
-	localStorage.setItem(num_aleatorio,celdas[numaleatorio]);
+	localStorage.setItem(num_aleatorio,celdas[num_aleatorio]);
 	//console.debug localStorage
-	//añadir_a_lista(num_aleatorio,celdas[]);
+	//aï¿½adir_a_lista(num_aleatorio,celdas[]);
 	
 }
 
 
 
 /*
-function añadir_a_lista(){
+function aï¿½adir_a_lista(){
 	localStorage.setItem(
 
 
