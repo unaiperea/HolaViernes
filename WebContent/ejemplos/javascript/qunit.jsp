@@ -31,10 +31,12 @@
     	assert.ok ( jonWayne.length == 3 , "Longitud del array = 3");
     	
     	var otroJonWayne = new Array ('El bueno el feo y el malo', 1973, 'nipidea');
-    	assert.ok ( jonWayne.concat(otroJonWayne)[0] == 'Jon' , 'Posición 0 está "Jon"' );
-    	assert.ok ( jonWayne.concat(otroJonWayne)[3] == 'El bueno el feo y el malo' , 'Posición 3 está "El bueno el feo y el malo"' );
-    	assert.ok ( jonWayne.concat(otroJonWayne)[4] == 1973 , 'Posición 4 está 1973' );
-    	assert.ok ( jonWayne.concat(otroJonWayne)[5] == 'nipidea' , 'Posición 5 está "nipidea"' );
+    	var otroVector = new Array;
+    	otroVector=jonWayne.concat(otroJonWayne);
+    	assert.ok ( otroVector[0] == 'Jon' , 'Posición 0 está "Jon"' );
+    	assert.ok ( otroVector[3] == 'El bueno el feo y el malo' , 'Posición 3 está "El bueno el feo y el malo"' );
+    	assert.ok ( otroVector[4] == 1973 , 'Posición 4 está 1973' );
+    	assert.ok ( otroVector[5] == 'nipidea' , 'Posición 5 está "nipidea"' );
     	
     	assert.ok ( jonWayne.join("#") == "Jon#Wayne#45" , 'array.join(#) es "Jon#Wayne#45"' );
     	
@@ -43,7 +45,7 @@
     	assert.ok ( jonWayne[2] == "Jon" , 'array.reverse() Posición 2 está "Jon"' );
     	
     	var numeros = new Array (-5, 5, 3, 1, 0);
-    	var numerosOrdenados=new Array;
+    	var numerosOrdenados=new Array;//Declarar las MENOS variables que se puedan
     	numerosOrdenados=numeros.sort();
     	assert.ok ( numerosOrdenados[0] == -5 , 'Números ordenados de menor a mayor: 1º -5' );
     	assert.ok ( numerosOrdenados[1] == 0 , '2º 0' ); // Si pongo numeros.sort()[1] ejecutaría sort de nuevo

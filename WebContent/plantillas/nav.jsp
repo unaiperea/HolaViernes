@@ -78,16 +78,22 @@
 		<li>
 			<h3>JavaScript</h3>
 			<ul>
-				<li><a href="ejemplos/javascript/basico.jsp">B&aacute;sico</a></li>
+				<li>
+					<h4>B&aacute;sicos</h4>
+					<ul>
+						<li><a href="ejemplos/javascript/basico.jsp">B&aacute;sico</a></li>
+						<li><a href="ejemplos/javascript/calculadora.jsp">Calculadora</a></li>
+						<li><a href="ejemplos/javascript/qunit.jsp">Test con Qunit</a></li>
+						<li><a href="ejemplos/javascript/objetos.jsp">Objetos</a></li>
+					</ul>
+				</li>
 				<li>
 					<h4>Plugins</h4>
 					<ul>
 						<li><a href="ejemplos/plugins/datatable.jsp">DataTables</a></li>
-		
 					</ul>
 				</li>
-				<li><a href="ejemplos/javascript/calculadora.jsp">Calculadora</a></li>
-				<li><a href="ejemplos/javascript/qunit.jsp">Test</a></li>
+				
 			</ul>
 		</li>
 		
