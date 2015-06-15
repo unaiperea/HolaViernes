@@ -18,7 +18,7 @@
 
 */
 body {
-	background: url('../img/back2.jpg');
+	background-image: url('../img/back2.jpg');
 	font-family: arial;
 }
 
@@ -465,21 +465,12 @@ nav{
 .clearfix { *zoom: 1; }
 
 
-/* HEAD*/
+/* HEADER*/
 
-/*
-#head{
-	position:fixed;
-	background-color:#FFF;
-	width:900px;
-	paddig-top:10px;
+header{
+	border:1px solid grey;
+	background-color:black;
 }
-
-#head #logo, #head h1{ /*He flotado el logo y el h1 a la dcha*/
-/*
-	float:right;
-}
-*/
 
 /************
 *CALCULADORA*

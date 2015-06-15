@@ -2,12 +2,6 @@
 
 <jsp:include page="../../plantillas/nav.jsp"></jsp:include>
 
-<style>
-	body{
-		background-image:none !important;
-		}
-</style>
-
 <section>
 	
 	<article>
@@ -65,12 +59,41 @@
 						<div>
 							<span> <strong>Array de im&aacute;genes</strong> </span>
 							<img src="img/facebook.png"> <img src="img/instagram.png">
-							<input type="button" id="d_images" value="Accedemos al src de las imágenes del documento"/>
+							<input type="button" id="d_images" value="Accedemos al src de las im&aacute;genes del documento"/>
 						</div>
 					</li>
 					<li>
 						<span> <strong>links</strong> </span>
-						<input type="button" id="d_links" value="Cambia el color de los arrays de los tres primeros links"/>
+						<input type="button" id="d_links" value="Muestra los enlaces que existen en la página"/>
+					</li>
+				</ul>
+		</div>
+				<div class="cnt_article">
+			
+				<h2>Objeto Location</h2>
+				
+				<hr>
+				
+				<ul>
+					<li>
+						<span> <strong>hostname</strong> </span>
+						<span id="l_hostname"></span>
+					</li>
+					<li>
+						<span> <strong>port</strong> </span>
+						<span id="l_port"></span>
+					</li>
+					<li>
+						<span> <strong>protocol</strong> </span>
+						<span id="l_protocol"></span>
+					</li>
+					<li>
+						<span> <strong>href</strong> </span>
+						<span id="l_href"></span>
+					</li>
+					<li>
+						<span> <strong> M&eacute;todo reload</strong> </span>
+						<input type="button" id="l_reload" value="Método reload()"/>
 					</li>
 				</ul>
 		</div>
@@ -87,6 +110,7 @@
 		document.getElementById('w_name').innerHTML = window.name; //Nombre de la pestaña o contenido de la etiqueta <title>
 		
 		//OPEN
+		//En Chrome no funciona por lo que hemos metido JavaScript en la nueva ventana para controlarlo
 		var btn_w_open = document.getElementById('w_open');
 		btn_w_open.onclick = function(){
 			console.info('Hemos hecho Click');
@@ -101,7 +125,7 @@
 		//ALERT
 		document.getElementById('w_confirm_alert').onclick = function(){
 			if (confirm("¿Está seguro de que quiere continuar?")){
-				alert('Pues continúa');
+				alert('Pues continúa'); //o window.alert
 			}else{
 				alert('El usuario ha decidido cancelar');
 			}
@@ -115,24 +139,50 @@
 		}
 		
 	/*OBJETO DOCUMENT*/
-		//BGCOLOR
+		//BGCOLOR --> Más abajo modifico el estilo background-image. Pero a mí no me funciona
 		document.getElementById('d_bgcolor').onclick = function(){
 			document.bgcolor="#F5ECCE";
 		}
 	
 		//IMAGES
 			document.getElementById('d_images').onclick = function(){
-				var cadena = '';
-				for (i=0; i < document.images.length;i++){
-					cadena = cadena + document.images[i] + '\n';
+				var aImagenes = document.images; //Recoge todas las imágenes en una variable
+				var cadena = 'Este documento tiene ' + aImagenes.length + ' imagenes \n';
+				for (i=0; i < aImagenes.length;i++){
+					cadena += aImagenes[i].src + '\n';
+					if (i==5)break; //Si hay más de 5 sallir del bucle
 				}
 				alert(cadena);
 		}
-	
 		//LINKS
-		
+		document.getElementById('d_links').onclick = function(){
+			var aLinks = document.links; //Recoge todas las imágenes en una variable
+			var cadena = 'Este documento tiene ' + aLinks.length + ' enlaces \n';
+			for (i=0; i < aLinks.length;i++){
+				cadena += aLinks[i].src + '\n';
+				if (i==5)break; //Si hay más de 5 sallir del bucle
+			}
+			alert(cadena);
+		}
+	/*OBJETO LOCATION*/
+		//HOSTNAME
+		document.getElementById('l_hostname').innerHTML = location.hostname;
+		//PORT
+		document.getElementById('l_port').innerHTML = location.port;
+		//PROTOCOL
+		document.getElementById('l_protocol').innerHTML = location.protocol;
+		//HREF
+		document.getElementById('l_href').innerHTML = location.href;
+		//MÉTODO RELOAD
+		document.getElementById('l_reload').onclick = function(){
+			
+		}
 	
 	</script>
+
+	<style>
+		body{background-image:none !important;}
+	</style>
 
 	</article>
 	

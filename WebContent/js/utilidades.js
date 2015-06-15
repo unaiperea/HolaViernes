@@ -1,4 +1,49 @@
 
+/**
+ * Convierte parámetro fecha a formato español
+ * @param date objeto tipo Date con la fecha a convertir
+ * @param formato CORTO: 'dd/mm/yyyy' ; LARGO: 'el 1 de enero de 2015
+ * @returns {String}
+ */
+const CORTO = 'corto';
+const LARGO = 'largo';
+function convertirFecha(date,formato){
+	var resul = null;
+	var aMeses = new Array('Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre');
+	var dia = null;
+	var mes = null;
+
+		if (date instanceof Date &&  //Que compruebe que sea de tipo Date
+			!isNaN(date.getDate())){ //y que sea número
+			//Concatenar un 0 si el día es menor a 10
+			if (date.getDate() <10){
+				dia = '0' + date.getDate();
+			}else{
+				dia = date.getDate();
+			}
+			
+			//misma jugada para el mes
+			//Recordar que los meses se cuentan de 0-11
+			if ((date.getMonth() + 1) < 10){
+				mes ='0' + (date.getMonth() + 1);
+			}
+			else{
+				mes = date.getMonth() + 1; 
+			}
+			
+			switch (formato){
+			case CORTO:
+				resul = dia + '/' + mes + '/' + date.getFullYear();
+				break;
+			case LARGO:
+				resul = 'el ' + dia + ' de ' + aMeses[mes] + ' de ' + date.getFullYear();
+				break;
+			}
+			
+		}
+	
+	return resul;
+}
 
 /********************************
  * CINE DE ALMENDRALEJO (PÁG 283)

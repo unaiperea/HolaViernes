@@ -13,6 +13,18 @@
   <script src="..\..\js\utilidades.js"></script>
   
     <script>
+    
+    QUnit.test( "Fechas", function( assert ) {
+    	var fecha = new Date(2015,5,15);
+    	assert.ok ( convertirFecha(fecha,CORTO) == '15/05/2015', 'fecha corta' );
+    	assert.ok ( convertirFecha(fecha,CORTO) == null, 'fecha no correcta' );
+    	assert.ok ( convertirFecha(null,CORTO) == null, 'fecha nula' );
+    	assert.ok ( convertirFecha(undefined,CORTO) == null, 'fecha undefined' );
+    	
+    	var fechaInvalida = new Date('ff/05/2020');
+    	assert.ok ( convertirFecha('ff/05/2020',CORTO) == null, 'fecha con formato incorrecto' );
+    });
+    
     QUnit.test( "funciones predefinidas", function( assert ) {
     	assert.ok ( escape('Hola Mundo') == 'Hola%20Mundo', "'Hola%20Mundo', 'Hola Mundo escapado'" );
     	

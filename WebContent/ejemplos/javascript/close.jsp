@@ -17,7 +17,15 @@
 		</div>
 
 		<script type="text/javascript">
-		/*Window*/
+		/*WINDOW*/
+			//Como no funciona en la propia llamada el resizeable=no en Chrome controlamos desde aquí el tamaño
+			window.onresize = function(){
+				window.resizeTo(400,400);
+			}
+			window.onclick = function(){
+				window.resizeTo(400,400);
+			}
+
 			//Obtener botón
 			var btn_w_cerrar = document.getElementById('w_cerrar').onclick = function(){
 				window.close();

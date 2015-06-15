@@ -93,7 +93,6 @@
 						<li><a href="ejemplos/plugins/datatable.jsp">DataTables</a></li>
 					</ul>
 				</li>
-				
 			</ul>
 		</li>
 		
